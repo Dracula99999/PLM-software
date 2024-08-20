@@ -1,0 +1,92 @@
+/* NewProjectForm.css */
+.content {
+    flex: 1 1;
+    padding: px;
+    overflow-y: auto;
+    background-color: white;
+}
+.projet-list-section {
+    padding: px;
+        background-color: white;
+        width: 100%;
+}
+.projet-details-content{
+margin-top: 20px;
+     width: 100%;}
+
+.new-projet-form {
+
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #dd191f;
+    font-size: large;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.form-group label {
+    display: block;
+    font-family: system-ui;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="date"]::placeholder {
+    color: #aaa;
+}
+
+.buttoncreer {
+    padding: 10px 20px;
+        margin: 20px;
+        border: none;
+        background-color: #f9d9d7;
+        color: #dd191f;
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: system-ui;
+        font-size: large;
+        width :565px
+}
+.buttoncreer:hover {
+    background-color: #dd191f;
+    color: white;
+}
+
+.label{display: contents;
+           font-size: 1.17em;
+           margin-block-start: 1em;
+           margin-block-end: 1em;
+           margin-inline-start: 0px;
+           margin-inline-end: 0px;
+           font-weight: bold;
+           unicode-bidi: isolate;
+    }

@@ -1,0 +1,156 @@
+/* General Container */
+.stock-details-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Tabs Styling */
+.MuiTabs-indicator {
+    background-color: #dd191f !important;
+}
+
+/* Tab Panel Content */
+.stock-details-content {
+    margin-top: 20px;
+}
+
+/* Stock List Section */
+.stock-list-section {
+    margin-top: 20px;
+}
+
+.stock-list-section h2 {
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Table Styling */
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table th, .stock-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap; /* Ensure content does not wrap */
+}
+
+.stock-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.stock-table td {
+    background-color: #fbfbfb;
+}
+
+.stock-table th:first-child, .stock-table td:first-child {
+    border-left: none;
+}
+
+.stock-table th:last-child, .stock-table td:last-child {
+    border-right: none;
+}
+
+/* Delete Button Styling */
+.delete-button {
+    padding: 5px 10px;
+    background-color: #dd191f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-button:hover {
+    background-color: #bb161b;
+}
+
+/* Add New Section */
+.add-new-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form */
+}
+
+.add-new-section h2 {
+    /*color: #333;*/
+    margin-bottom: 20px;
+}
+
+/* New Stock Form */
+.new-stock-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%; /* Set a width for the form */
+    max-width: 800px; /* Maximum width for the form */
+}
+
+.new-stock-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.new-stock-form input,
+.new-stock-form select,
+.new-stock-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Make input fields take full width */
+}
+
+.new-stock-form button {
+    padding: 15px;
+    background-color: #dd191f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Make the button take full width */
+    max-width: 200px; /* Set a maximum width for the button */
+    align-self: center; /* Center align the button */
+}
+
+.new-stock-form button:hover {
+    background-color: #bb161b;
+}
+
+/* Loading and Error Messages */
+.loading-message, .error-message {
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive Design */
+/*@media (max-width: 768px) {
+    .stock-table th, .stock-table td {
+        padding: 8px;
+    }
+
+    .new-stock-form input,
+    .new-stock-form select,
+    .new-stock-form textarea {
+        padding: 8px;
+    }
+
+    .new-stock-form button {
+        padding: 10px;
+    }
+}*/

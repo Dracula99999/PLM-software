@@ -1,0 +1,130 @@
+/* MatierePremiereDetails.css */
+
+.matiere-premiere-details-container {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+.matiere-premiere-details-content {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.matiere-list-section,
+.advanced-search-section,
+.add-new-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.search-input,
+.form-input,
+.category-select,
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+}
+
+.submit-button {
+    background-color: #dd191f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #f9d9d7;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    padding: 10px;
+    background-color: #fcf4f3;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.dropdowns {
+    margin-top: 10px;
+    background-color: #EDDDDD;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdowns-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdowns-item:hover {
+    background-color: #f9f9f9;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.advanced-search-section h3,
+.add-new-section h3 {
+    margin-top: 20px;
+}
+.buttons-container {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #f9d9d7;
+    color: #dd191f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+    width: 1320px;
+}
+
+.buttons-container:hover {
+    background-color: #dd191f;
+    color: white;
+}
+
+.buttons-form {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #f9d9d7;
+    color: #dd191f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+    width: 150px;
+}
+
+.buttons-form:hover {
+    background-color: #dd191f;
+    color: white;
+}

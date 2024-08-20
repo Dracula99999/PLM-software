@@ -1,0 +1,111 @@
+/* EssaiForm.css */
+.essai-form {
+    font-family: Arial, sans-serif;
+    margin: 20px; /* Réduit la marge du formulaire */
+}
+
+.form-section {
+    background-color: #fff; /* Arrière-plan inchangé */
+    border: 2px solid ; /* Bordure des sections */
+    border-radius: 4px; /* Coins arrondis réduits */
+    margin-bottom: 10px; /* Réduit la marge inférieure */
+    padding: 15px; /* Réduit le padding interne */
+    position: relative; /* Position relative pour le titre */
+}
+
+.section-header {
+    color: #dd191f; /* Fond du titre */
+    padding: 5px 10px; /* Padding autour du texte du titre */
+    border-radius: 4px; /* Coins arrondis pour le titre */
+    font-size: 16px; /* Taille du texte du titre */
+    font-weight: bold; /* Gras pour le titre */
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les éléments de la ligne */
+    margin-bottom: 15px; /* Espacement entre les lignes du formulaire */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre le label et le champ de saisie */
+    flex: 1;
+    min-width: 200px; /* Largeur minimale des groupes de champs */
+    margin-bottom: 8px; /* Espacement entre les groupes de champs */
+    height: 50px;
+}
+
+.form-group label {
+    flex-basis: 150px; /* Largeur du label */
+    margin: 0;
+    font-weight: bold;
+    color:#000;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 8px; /* Padding intérieur */
+    border: 1px solid #f9d9d7; /* Bordure des champs */
+    border-radius: 4px; /* Coins arrondis des champs */
+    font-size: 14px; /* Taille de la police des champs */
+    background-color: #fff; /* Fond blanc pour les champs */
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacement entre la case à cocher et le label */
+    margin-bottom: 5px; /* Espacement pour les groupes de cases à cocher */
+}
+
+.checkbox-group label {
+    margin-left: 4px; /* Espacement à gauche du label de la case à cocher */
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end; /* Aligne les boutons à droite */
+    margin-top: 15px; /* Réduit la marge supérieure */
+}
+
+.cancel-btn,
+.submit-btn {
+    padding: 8px 16px; /* Réduit le padding interne des boutons */
+    border: none;
+    border-radius: 4px; /* Réduit le rayon des coins des boutons */
+    cursor: pointer;
+    font-size: 14px; /* Réduit la taille de la police des boutons */
+}
+
+.cancel-btn {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    background-color: #f9d9d7;
+    color: #dd191f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+    width: 565px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    background-color: #f9d9d7;
+    color: #dd191f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+    width: 565px;
+}

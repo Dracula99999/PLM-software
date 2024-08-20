@@ -1,0 +1,509 @@
+/* ProjetDetails.css */
+.content {
+    flex: 1 1;
+    /*padding: px;*/
+    overflow-y: auto;
+    background-color: white;
+}
+.projet-list-section {
+    /*padding: px;*/
+    background-color: white;
+    width: 100%;
+}
+.projet-details-content{
+    margin-top: 20px;
+    width: 100%;}
+
+.search-input {
+
+    display: block;
+    width: 100%;
+    /*padding: px;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+}
+
+.dropdownss {
+    margin-top: 10px;
+    background-color: #EDDDDD;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dropdowns-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdowns-item:hover {
+    background-color: #f9f9f9;
+}
+
+.buttons-container {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    background-color: #f9d9d7;
+    color: #dd191f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+    width :1010px
+
+}
+.button-container {
+    padding: 10px 20px;
+    margin-left: 80%;
+    border: none;
+    background-color: #dd191f;
+    color: #f9d9d7;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+
+
+}
+.button-container:hover {
+    background-color:white ;
+    color: #dd191f;
+}
+.buttons-container:hover {
+    background-color: #dd191f;
+    color: white;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.advanced-search-section h3 {
+    margin-top: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #dd191f;
+    font-size: large;
+}/* Agrandir le conteneur du dialogue */
+.dialog-container {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    margin: 32px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; /* Hauteur maximale agrandie */
+    max-width: 90vw;  /* Largeur maximale agrandie */
+    width: auto;      /* Largeur automatique */
+    height: auto;     /* Hauteur automatique */
+    min-width: 600px; /* Largeur minimale pour éviter trop de réduction */
+    min-height: 400px; /* Hauteur minimale pour éviter trop de réduction */
+}
+
+/* Ajuster le titre du dialogue */
+
+
+/* Ajuster le contenu du dialogue */
+.dialog-content {
+    padding: 16px; /* Espacement intérieur */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacement entre les champs */
+}
+
+/* Ajuster les actions du dialogue */
+.dialog-actions {
+    padding: 16px; /* Espacement intérieur */
+    border-top: 1px solid #ccc; /* Bordure supérieure */
+    text-align: right; /* Alignement des boutons */
+}
+
+.dialog-actions button {
+    background-color: #dd191f; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 12px 24px; /* Espacement intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer */
+    transition: background-color 0.3s ease; /* Transition au survol */
+    font-size: 1rem; /* Taille de la police des boutons */
+}
+
+.dialog-actions button:hover {
+    background-color: #dd191f; /* Couleur de fond au survol */
+}
+/* Style général pour le dialogue */
+.MuiDialog-paper {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Titre du dialogue */
+.dialog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenu du dialogue */
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacement entre les champs */
+}
+
+/* Styles des sections de critères de recherche */
+.search-criteria h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Style des champs de texte */
+.MuiFormControl-root {
+    margin-bottom: 16px;
+}
+
+/* Style des labels des champs */
+.MuiFormLabel-root {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Style des champs de saisie */
+.MuiInputBase-root {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Style du bouton de fermeture */
+.dialog-actions {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding: 16px; /* Ajoute un peu d'espace autour du bouton */
+}
+
+.dialog-actions button {
+    padding: 12px ; /* Ajoute du padding vertical pour une meilleure apparence */
+    font-size: 1rem; /* Ajuste la taille du texte du bouton */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprime la bordure du bouton */
+    border-radius: 4px; /* Ajoute des coins arrondis */
+    cursor: pointer; /* Change le curseur pour indiquer que le bouton est cliquable */
+    width: 100%; /* Fait en sorte que le bouton occupe toute la largeur du conteneur */
+    text-align: center; /* Centre le texte à l'intérieur du bouton */
+}
+
+.dialog-actions button:hover {
+    background-color: #b71c1c; /* Couleur de fond au survol */
+}
+.dialog-actions button:focus {
+    outline: 2px solid #0056b3; /* Contour du bouton lorsque le bouton est focalisé */
+}
+
+
+
+
+
+
+
+
+
+
+
+.search-input,
+.form-input,
+.category-select,
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+}
+
+.submit-button {
+    background-color: #dd191f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #f9d9d7;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    padding: 10px;
+    background-color: #fcf4f3;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.dropdown {
+    margin-top: 10px;
+    background-color: #EDDDDD;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdowns-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdowns-item:hover {
+    background-color: #f9f9f9;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.tasks-section h3 {
+    margin-top: 20px;
+}
+
+.buttons-container {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #f9d9d7;
+    color: #dd191f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+    width: 100%;
+}
+
+.buttons-container:hover {
+    background-color: #dd191f;
+    color: white;
+}
+
+.buttons-form {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #f9d9d7;
+    color: #dd191f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: large;
+    width: 150px;
+}
+
+.buttons-form:hover {
+    background-color: #dd191f;
+    color: white;
+}
+
+/* TasksTable.css */
+
+.tasks-table-container {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    overflow-x: auto; /* Ajoute une barre de défilement horizontal si nécessaire */
+}
+
+.tasks-table {
+    width: 100%; /* Utilise toute la largeur disponible */
+    border-collapse: collapse;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.tasks-table th, .tasks-table td {
+    padding: 6px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tasks-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tasks-table td {
+    padding  :6px;
+    color: #555;
+    font-size: 14px;
+}
+
+.tasks-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tasks-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Largeurs spécifiques pour chaque colonne */
+.col-id {
+    width: 50px; /* Largeur de la colonne ID */
+}
+
+.col-description {
+    width: 200px; /* Largeur de la colonne Description */
+}
+
+.col-category {
+    width: 120px; /* Largeur de la colonne Catégorie */
+}
+
+.col-applicable {
+    width: 100px; /* Largeur de la colonne Applicable */
+}
+
+.col-not-applicable {
+    width: 100px; /* Largeur de la colonne Non Applicable */
+}
+
+.col-assigned {
+    width: 100px; /* Largeur de la colonne Attribué */
+}
+
+.col-progress {
+    width: 100px; /* Largeur de la colonne Progression */
+}
+
+.col-day {
+    width: 80px; /* Largeur de la colonne Jour */
+}
+
+.col-start {
+    width: 100px; /* Largeur de la colonne Début */
+}
+
+.col-service {
+    width: 120px; /* Largeur de la colonne Service */
+}
+
+.col-action {
+    width: 150px; /* Largeur de la colonne Action */
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-button:hover {
+    background-color: #0056b3;
+}
+
+.task-button.delete {
+    background-color: #dc3545;
+}
+
+.task-button.delete:hover {
+    background-color: #c82333;
+}
+
+.task-button.edit {
+    background-color: #28a745;
+}
+
+.task-button.edit:hover {
+    background-color: #218838;
+}
+/* TasksTable.css */
+
+/* Réduit la taille des inputs et des éléments Autocomplete */
+.tasks-table input[type="text"],
+.tasks-table input[type="checkbox"],
+.tasks-table input[type="time"],
+.tasks-table .MuiAutocomplete-root {
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
+}
+
+.tasks-table .MuiTextField-root {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.tasks-table .MuiAutocomplete-inputRoot {
+    padding: 0;
+    font-size: 12px;
+}
+
+.tasks-table .MuiAutocomplete-input {
+    padding: 6px;
+}
+
+/* Style pour le bouton d'ajout */
+.tasks-table button {
+    padding: 10px ;
+    margin: 2px;
+    border: none;
+    background-color: #dd191f;
+    color: #fff ;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    width :70px
+}
+
+.tasks-table button:hover {
+    background-color:#f9d9d7;
+}
+
+
+.buttonss{
+    padding: 10px;
+    margin: 2px;
+    border: none;
+    background-color: #dd191f;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: system-ui;
+    width: 250px;
+    margin-left :70%;}
