@@ -3,6 +3,7 @@ package tn.jmal.userstock.Entities;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -22,8 +23,9 @@ public class Stock {
     private int quantite =0;
     private Date creationDate;
     private Long matierePremiereId;
-    @PrePersist
+    private LocalDate dateReception;
+  /*  @PrePersist
     protected void onCreate() {
         this.creationDate = new Date();
-    }
+    }*/
 }
